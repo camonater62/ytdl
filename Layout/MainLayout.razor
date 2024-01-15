@@ -1,16 +1,26 @@
 ﻿@inherits LayoutComponentBase
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        body, h1 {
+            font-family: "Raleway", sans-serif
+        }
 
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div>
+        body, html {
+            height: 100%
+        }
+
+        .bgimg {
+            background-image: url('forestbridge.jpg');
+            min-height: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<main>
+	@Body
+</main>
